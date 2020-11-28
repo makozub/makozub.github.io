@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-    <head>
-        <meta charset="UTF-8">
-        <title>Modulo</title>
-        <script src="js/datos.js"></script>
-        <script type="text/javascript">
-            const abrirTest = (enlace) =>  {
-                window.open(enlace,"","height=600,width=800");
-            }
-        </script>
-    </head>
-    <body>
-        <h1>
-            Asignaturas
-        </h1>
-        <table>
-          <tr>
-            <td>Desarrollo de Interfaces</td>
-            <td>Tema 3</td>
-            <td><button onclick="javascript:abrirTest('https://www.daypo.com/diw-unidad-3.html#test')"></button></td>
-          </tr>
-        </table>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Examenens Modulo DAW</title>
+    <script src="js/datos.js"></script>
+    <script src="js/funciones.js"></script>
+    <style>
+        li {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body onload="mostrarExamenes()">
+    <h1>Examemenes online modulo DAW</h1>
+    <div id="tabla-examenes"></div>
+</body>
 </html>
