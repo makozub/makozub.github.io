@@ -1,5 +1,6 @@
 const abrirTest = (enlace) => {
-    window.open(enlace, "", "height=600,width=800");
+    let redirectWindow = window.open(enlace, '_blank');
+    redirectWindow.location;
 }
 
 const mostrarExamenes = () => {
